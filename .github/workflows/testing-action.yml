@@ -12,5 +12,7 @@ jobs:
           java-version: '17'    
           distribution: 'temurin'    
           cache: 'gradle'    
+      - name: Grant execute permission to gradlew
+        run: chmod +x ./gradlew
       - name: Test with Gradle           
         run: ./gradlew test
